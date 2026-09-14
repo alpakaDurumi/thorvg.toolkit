@@ -22,7 +22,8 @@ The toolkit provides:
 - [Build and Install](#build-and-install)
 - [Basic Usage](#basic-usage)
   - [Rendering Engines](#rendering-engines)
-  - [Animation and Input](#animation-and-input)
+  - [Input and Update](#input-and-update)
+- [Examples](#examples)
 - [Communication](#communication)
 
 ## Build and Install
@@ -110,6 +111,12 @@ Override the `App` optional callbacks to update content or handle interaction:
 Return `true` from these callbacks when the canvas needs to be redrawn. Their default implementations return `false`.
 
 See [thorvg_toolkit.h](inc/thorvg_toolkit.h) for the public API documentation.
+
+[Back to contents](#contents)
+<br/>
+<br/>
+## Examples
+A wide range of native sample codes is available in the [thorvg.example](https://github.com/thorvg/thorvg.example) repository to help you understand and work with the ThorVG Toolkit usage.
 
 [Back to contents](#contents)
 <br/>
