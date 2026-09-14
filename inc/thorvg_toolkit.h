@@ -215,7 +215,7 @@ struct TVG_API App
      */
     bool clear;
 
-    _TVG_DECLARE_PRIVATE_BASE(App);
+    _TVG_PROTECTED_CTOR_PIMPL(App);
 };
 
 /**
