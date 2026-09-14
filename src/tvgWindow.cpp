@@ -160,7 +160,7 @@ SwWindow::SwWindow(App* app, const App::Size& size) : Window(app, size)
 
     canvas = tvg::SwCanvas::gen();
     if (!canvas) {
-        cout << "SwCanvas is not supported. Did you enable the SwEngine?" << endl;
+        std::cout << "SwCanvas is not supported. Did you enable the SwEngine?" << std::endl;
         return;
     }
 
@@ -212,7 +212,7 @@ GlWindow::GlWindow(App* app, const App::Size& size) : Window(app, size)
     // create a Canvas
     canvas = tvg::GlCanvas::gen();
     if (!canvas) {
-        cout << "GlCanvas is not supported. Did you enable the GlEngine?" << endl;
+        std::cout << "GlCanvas is not supported. Did you enable the GlEngine?" << std::endl;
         return;
     }
 
@@ -337,7 +337,7 @@ WgWindow::WgWindow(App* app, const App::Size& size) : Window(app, size)
     // create a Canvas
     canvas = tvg::WgCanvas::gen();
     if (!canvas) {
-        cout << "WgCanvas is not supported. Did you enable the WgEngine?" << endl;
+        std::cout << "WgCanvas is not supported. Did you enable the WgEngine?" << std::endl;
         return;
     }
 

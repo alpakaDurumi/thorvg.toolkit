@@ -31,9 +31,6 @@
     #include <webgpu/webgpu.h>
 #endif
 
-using namespace std;
-using namespace tvg;
-
 namespace tvg::toolkit
 {
 
@@ -97,7 +94,7 @@ struct GlWindow : Window
     {
         WgWindow(App* app, const App::Size& size) : Window(app, size)
         {
-            cout << "webgpu driver is not detected!" << endl;
+            std::cout << "webgpu driver is not detected!" << std::endl;
         }
     };
 #endif
