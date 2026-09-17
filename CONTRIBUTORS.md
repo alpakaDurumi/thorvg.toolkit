@@ -7,3 +7,6 @@ For definitions and responsibilities of each project role, see [Roles & Responsi
 
 ## Maintainer
 - Hermet Park @hermet
+
+## Contributor
+- Duram Kim @alpakaDurumi
