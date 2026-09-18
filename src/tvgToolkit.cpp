@@ -54,6 +54,11 @@ struct App::Impl
 App::App(const std::string& name, const Size& size, bool clear) :
     name(name), clear(clear), pImpl(new App::Impl(size)) {}
 
+App::~App()
+{
+    delete(pImpl);
+}
+
 const App::Size& App::size() noexcept
 {
     return pImpl->size;

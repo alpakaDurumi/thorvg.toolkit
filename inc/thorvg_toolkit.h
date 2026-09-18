@@ -113,8 +113,6 @@ struct TVG_TOOLKIT_API App
      */
     App(const std::string& name, const Size& size, bool clear = false);
 
-    virtual ~App() = default;
-
     /**
      * @brief Requests termination of the application's window event loop.
      */
@@ -235,7 +233,7 @@ struct TVG_TOOLKIT_API App
      */
     bool clear;
 
-    _TVG_PROTECTED_CTOR_PIMPL(App);
+    _TVG_PUBLIC_DTOR_PIMPL(App);
 };
 
 /**
